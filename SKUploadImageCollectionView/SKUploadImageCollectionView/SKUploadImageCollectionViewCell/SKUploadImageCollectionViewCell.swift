@@ -10,7 +10,7 @@ import UIKit
 
 class SKUploadImageCollectionViewCell: UICollectionViewCell {
     
-    //MARK: - IBOutlet
+    // MARK: - IBOutlet
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bottomButtonImageView: UIImageView!
@@ -21,11 +21,18 @@ class SKUploadImageCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var shadowView: UIView!
     
-    //MARK: - IBAction
-    @IBAction func didClickBottomButton() {
-        
+    // MARK: - Properties
+    var tagId: Int = 0
+    var didClickButton: ((_ tagId: Int) -> Void)?
+    
+    // MARK: - IBAction
+    @IBAction private func didClickBottomButton() {
+        if let didClickButton = didClickButton {
+            didClickButton(tagId)
+        }
     }
     
+    // MARK: - Function
     func dropShadow(color: UIColor, opacity: Float = 0.5, offSet: CGSize, radius: CGFloat = 1, scale: Bool = true)
     {
         shadowView.layer.masksToBounds = true

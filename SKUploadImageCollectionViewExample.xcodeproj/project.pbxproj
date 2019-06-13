@@ -12,16 +12,24 @@
 		31D92B6A22AFBF6500BE1C2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D92B6822AFBF6500BE1C2D /* Main.storyboard */; };
 		31D92B6C22AFBF6600BE1C2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D92B6B22AFBF6600BE1C2D /* Assets.xcassets */; };
 		31D92B6F22AFBF6600BE1C2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D92B6D22AFBF6600BE1C2D /* LaunchScreen.storyboard */; };
+		31D92B7822B0B45700BE1C2D /* SKUploadImageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D92B7722B0B45700BE1C2D /* SKUploadImageCollectionView.swift */; };
+		31D92B7C22B0B4F600BE1C2D /* SKUploadImageCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D92B7B22B0B4F600BE1C2D /* SKUploadImageCollectionView.xib */; };
+		31D92B8122B0B7EE00BE1C2D /* SKUploadImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D92B8022B0B7EE00BE1C2D /* SKUploadImageCollectionViewCell.swift */; };
+		31D92B8322B0B96B00BE1C2D /* SKUploadImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D92B8222B0B96B00BE1C2D /* SKUploadImageCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		31D92B6122AFBF6500BE1C2D /* SKUploadImageCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKUploadImageCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31D92B6122AFBF6500BE1C2D /* SKUploadImageCollectionViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKUploadImageCollectionViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D92B6422AFBF6500BE1C2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31D92B6622AFBF6500BE1C2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		31D92B6922AFBF6500BE1C2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31D92B6B22AFBF6600BE1C2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31D92B6E22AFBF6600BE1C2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31D92B7022AFBF6600BE1C2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31D92B7722B0B45700BE1C2D /* SKUploadImageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKUploadImageCollectionView.swift; sourceTree = "<group>"; };
+		31D92B7B22B0B4F600BE1C2D /* SKUploadImageCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SKUploadImageCollectionView.xib; sourceTree = "<group>"; };
+		31D92B8022B0B7EE00BE1C2D /* SKUploadImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKUploadImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		31D92B8222B0B96B00BE1C2D /* SKUploadImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SKUploadImageCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +54,7 @@
 		31D92B6222AFBF6500BE1C2D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				31D92B6122AFBF6500BE1C2D /* SKUploadImageCollectionView.app */,
+				31D92B6122AFBF6500BE1C2D /* SKUploadImageCollectionViewExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +62,7 @@
 		31D92B6322AFBF6500BE1C2D /* SKUploadImageCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				31D92B7622AFBF9300BE1C2D /* SKUploadImageCollectionView */,
 				31D92B6422AFBF6500BE1C2D /* AppDelegate.swift */,
 				31D92B6622AFBF6500BE1C2D /* ViewController.swift */,
 				31D92B6822AFBF6500BE1C2D /* Main.storyboard */,
@@ -64,12 +73,31 @@
 			path = SKUploadImageCollectionView;
 			sourceTree = "<group>";
 		};
+		31D92B7622AFBF9300BE1C2D /* SKUploadImageCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				31D92B7D22B0B7AB00BE1C2D /* SKUploadImageCollectionViewCell */,
+				31D92B7722B0B45700BE1C2D /* SKUploadImageCollectionView.swift */,
+				31D92B7B22B0B4F600BE1C2D /* SKUploadImageCollectionView.xib */,
+			);
+			path = SKUploadImageCollectionView;
+			sourceTree = "<group>";
+		};
+		31D92B7D22B0B7AB00BE1C2D /* SKUploadImageCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				31D92B8022B0B7EE00BE1C2D /* SKUploadImageCollectionViewCell.swift */,
+				31D92B8222B0B96B00BE1C2D /* SKUploadImageCollectionViewCell.xib */,
+			);
+			path = SKUploadImageCollectionViewCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		31D92B6022AFBF6500BE1C2D /* SKUploadImageCollectionView */ = {
+		31D92B6022AFBF6500BE1C2D /* SKUploadImageCollectionViewExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 31D92B7322AFBF6600BE1C2D /* Build configuration list for PBXNativeTarget "SKUploadImageCollectionView" */;
+			buildConfigurationList = 31D92B7322AFBF6600BE1C2D /* Build configuration list for PBXNativeTarget "SKUploadImageCollectionViewExample" */;
 			buildPhases = (
 				31D92B5D22AFBF6500BE1C2D /* Sources */,
 				31D92B5E22AFBF6500BE1C2D /* Frameworks */,
@@ -79,9 +107,9 @@
 			);
 			dependencies = (
 			);
-			name = SKUploadImageCollectionView;
+			name = SKUploadImageCollectionViewExample;
 			productName = SKUploadImageCollectionView;
-			productReference = 31D92B6122AFBF6500BE1C2D /* SKUploadImageCollectionView.app */;
+			productReference = 31D92B6122AFBF6500BE1C2D /* SKUploadImageCollectionViewExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +127,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 31D92B5C22AFBF6500BE1C2D /* Build configuration list for PBXProject "SKUploadImageCollectionView" */;
+			buildConfigurationList = 31D92B5C22AFBF6500BE1C2D /* Build configuration list for PBXProject "SKUploadImageCollectionViewExample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +140,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				31D92B6022AFBF6500BE1C2D /* SKUploadImageCollectionView */,
+				31D92B6022AFBF6500BE1C2D /* SKUploadImageCollectionViewExample */,
 			);
 		};
 /* End PBXProject section */
@@ -122,7 +150,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31D92B8322B0B96B00BE1C2D /* SKUploadImageCollectionViewCell.xib in Resources */,
 				31D92B6F22AFBF6600BE1C2D /* LaunchScreen.storyboard in Resources */,
+				31D92B7C22B0B4F600BE1C2D /* SKUploadImageCollectionView.xib in Resources */,
 				31D92B6C22AFBF6600BE1C2D /* Assets.xcassets in Resources */,
 				31D92B6A22AFBF6500BE1C2D /* Main.storyboard in Resources */,
 			);
@@ -136,6 +166,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				31D92B6722AFBF6500BE1C2D /* ViewController.swift in Sources */,
+				31D92B8122B0B7EE00BE1C2D /* SKUploadImageCollectionViewCell.swift in Sources */,
+				31D92B7822B0B45700BE1C2D /* SKUploadImageCollectionView.swift in Sources */,
 				31D92B6522AFBF6500BE1C2D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,7 +347,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		31D92B5C22AFBF6500BE1C2D /* Build configuration list for PBXProject "SKUploadImageCollectionView" */ = {
+		31D92B5C22AFBF6500BE1C2D /* Build configuration list for PBXProject "SKUploadImageCollectionViewExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				31D92B7122AFBF6600BE1C2D /* Debug */,
@@ -324,7 +356,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		31D92B7322AFBF6600BE1C2D /* Build configuration list for PBXNativeTarget "SKUploadImageCollectionView" */ = {
+		31D92B7322AFBF6600BE1C2D /* Build configuration list for PBXNativeTarget "SKUploadImageCollectionViewExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				31D92B7422AFBF6600BE1C2D /* Debug */,
